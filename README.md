@@ -1,7 +1,20 @@
-# Sick Leave Calculator
+# Calculadora de Afastamentos
 
-## Overview
-This calculator allowz the user to determinate the date a person should return from a license, by inputting the starting date. The result shows the date of return, as well as what they of the week it is.
+[English Version](README.en.md)
 
-## Link
-Live link: https://davifelipef.github.io/sick_leave_calculator/
+## Sobre o projeto
+
+A Calculadora de Afastamentos é uma aplicação web
+desenvolvida para calcular a data de retorno ao trabalho
+após um período de afastamento.
+
+## Funcionalidades
+
+- Cálculo da data de retorno ao trabalho.
+- Identificação do dia da semana correspondente.
+- Interface simples e intuitiva.
+- Não requer instalação.
+
+## Demonstração
+
+[Acessar a Calculadora de Afastamentos](https://davifelipef.github.io/sick_leave_calculator/)

@@ -1,24 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
     <head>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style.css">
-      <script src="script.js"></script>
-        <title>Sick Leave Calculator</title>
+        <script src="i18n.js" defer></script>
+        <script src="script.js" defer></script>
+        <title>Calculadora de Afastamentos</title>
     </head>
-        <body>
-            <h1>Calculadora de Afastamentos</h1>
+    <body>
+        <div id="language-selector">
+            <button type="button" onclick="setLanguage('pt-BR')">PT-BR</button>
+            <button type="button" onclick="setLanguage('en-US')">EN-US</button>
+        </div>
+
+        <h1 data-i18n="title">Calculadora de Afastamentos</h1>
+        <br>
+
+        <form id="calculator" action="" onsubmit="calcDate(event)">
+            <h2 data-i18n="startDate">
+                Selecione a data de início do afastamento:
+            </h2>
+
+            <input type="date" id="idate" required/>
             <br>
-                <form id="calculator" action="">
-                    <h2>Selecione a data de início da licença:</h2>         
-                        <input type="date" id="idate" onchange="dateCheck()" required/>   
-                    <br>    
-                    <h2>Digite o número de dias da licença:</h2>  
-                        <input type="number" id="inumber" min="1" onchange="numberCheck()" required/>
-                    <br>
-                    <h2>Clique no botão abaixo para fazer o cálculo:</h2>
-                        <input type="submit" id="isubmit" value="Calcular data" onclick="calcDate(event)"/>
-                    <p id="result"></p>
-                </form>
-        </body>
+
+            <h2 data-i18n="duration">
+                Digite o número de dias de afastamento:
+            </h2>
+
+            <input type="number" id="inumber" min="1" required/>
+            <br>
+
+            <h2 data-i18n="instruction">
+                Clique no botão abaixo para fazer o cálculo:
+            </h2>
+
+            <input type="submit" id="isubmit"
+                   data-i18n="calculate" value="Calcular data"/>
+
+            <p id="result"></p>
+        </form>
+    </body>
 </html>

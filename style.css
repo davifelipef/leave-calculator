@@ -252,3 +252,35 @@ form h2 {
         animation-iteration-count: 1 !important;
     }
 }
+
+/* 11. Language selector */
+
+#language-selector {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    display: flex;
+    gap: 8px;
+}
+
+#language-selector button {
+    padding: 8px 12px;
+
+    background: var(--color-surface);
+    color: var(--color-text);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-input);
+
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#language-selector button:hover {
+    background: var(--color-surface-hover);
+}
