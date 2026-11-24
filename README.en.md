@@ -16,4 +16,4 @@ the return-to-work date after a period of leave.
 
 ## Live Demo
 
-[Access the Leave Calculator](https://davifelipef.github.io/sick_leave_calculator/)
+[Access the Leave Calculator](https://davifelipef.github.io/leave-calculator/)

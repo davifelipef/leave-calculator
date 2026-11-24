@@ -17,4 +17,4 @@ após um período de afastamento.
 
 ## Demonstração
 
-[Acessar a Calculadora de Afastamentos](https://davifelipef.github.io/sick_leave_calculator/)
+[Acessar a Calculadora de Afastamentos](https://davifelipef.github.io/leave-calculator/)
